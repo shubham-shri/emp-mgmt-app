@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Container, Typography, Box, Stack } from "@mui/material";
+import { Typography, Box, Stack } from "@mui/material";
 import Employee from "../Employee";
 import { getSortedEmployeeDataBySortKey } from "../../helpers";
 

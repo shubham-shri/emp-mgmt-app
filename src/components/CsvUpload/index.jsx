@@ -16,7 +16,7 @@ export default function CsvUpload() {
         Papa.parse(file, {
           worker: true,
           complete({ data }) {
-            const headers = data[0];
+            // const headers = data[0];
             const employeeCsvData = data.slice(1);
             const employeeData = transformCsvEmployeeData(employeeCsvData);
             dispatch(setEmployeeList(employeeData));

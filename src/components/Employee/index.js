@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Card, CardContent, Grid } from "@mui/material";
+import { Typography, Card, CardContent } from "@mui/material";
 const Employee = ({ employee }) => {
   return (
     <Card>

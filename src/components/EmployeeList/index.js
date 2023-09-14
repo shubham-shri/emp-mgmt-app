@@ -19,7 +19,7 @@ const EmployeeList = () => {
   );
 
   return (
-    <Box sx={{ width: "100%", marginTop: "8px" }}>
+    <Box sx={{ width: "100%", margin: "8px 0px 8px 0px" }}>
       <Typography
         variant="h4"
         gutterBottom

@@ -31,11 +31,25 @@ const EmployeeList = () => {
       >
         Employee List
       </Typography>
-      <Stack spacing={2}>
-        {sortedEmployees.map((employee) => (
-          <Employee key={employee.employeeId} employee={employee} />
-        ))}
-      </Stack>
+      {employeeList && employeeList.length ? (
+        <Stack spacing={2}>
+          {sortedEmployees.map((employee) => (
+            <Employee key={employee.employeeId} employee={employee} />
+          ))}
+        </Stack>
+      ) : (
+        <Typography
+          variant="h6"
+          gutterBottom
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          No Employees to show
+        </Typography>
+      )}
     </Box>
   );
 };
